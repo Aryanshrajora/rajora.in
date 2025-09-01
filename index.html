@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Engineer Portfolio</title>
+    <!-- Use Tailwind CSS for a modern, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .page {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600">Embedded Engineer</h1>
+            <div class="flex space-x-4">
+                <button data-page="home"
+                    class="nav-button text-gray-700 hover:text-indigo-600 font-medium">Home</button>
+                <button data-page="services"
+                    class="nav-button text-gray-700 hover:text-indigo-600 font-medium">Project</button>
+                <button data-page="contact" class="nav-button text-gray-700 hover:text-indigo-600 font-medium">📞Get A
+                    Call Back</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content Container -->
+    <div class="container mx-auto mt-8 p-4">
+
+        <!-- Home Page (Page 1) -->
+        <section id="home-page" class="page active">
+            <div class="text-center py-16">
+                <h2 class="text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Turning Concepts into Code. <br>
+                    Expert Embedded Systems for Your Project.
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    I specialize in designing and developing robust, efficient, and reliable embedded systems. From
+                    initial ideation to final deployment, I provide end-to-end solutions that bring your hardware to
+                    life.
+                </p>
+            </div>
+
+            <!-- Project Mix Images Section -->
+            <div class="bg-white p-8 rounded-xl shadow-lg my-12">
+                <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">My Project</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div
+                        class="relative group overflow-hidden rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://aryanshrajora.github.io/rajora.in/Images/Website Image/A.png"
+                            alt="IoT Solutions" class="w-full h-auto">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <p class="text-white text-lg font-semibold">IoT Solutions</p>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div
+                        class="relative group overflow-hidden rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://aryanshrajora.github.io/rajora.in/Images/Website Image/C.png"
+                            alt="Robotics Firmware" class="w-full h-auto">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <p class="text-white text-lg font-semibold">Robotics & Automation</p>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div
+                        class="relative group overflow-hidden rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://aryanshrajora.github.io/rajora.in/Images/Website Image/B.png"
+                            alt="Embedded Linux" class="w-full h-auto">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <p class="text-white text-lg font-semibold">Embedded Linux</p>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div
+                        class="relative group overflow-hidden rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://aryanshrajora.github.io/rajora.in/Images/Website Image/D.png"
+                            alt="Custom PCB Designing" class="w-full h-auto">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <p class="text-white text-lg font-semibold">Custom PCB Designing</p>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div
+                        class="relative group overflow-hidden rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://aryanshrajora.github.io/rajora.in/Images/Website Image/D.png"
+                            alt="And Many More..." class="w-full h-auto">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <p class="text-white text-lg font-semibold">And Many More...</p>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div
+                        class="relative group overflow-hidden rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://aryanshrajora.github.io/rajora.in/Images/Website Image/D.png"
+                            alt="And Many More..." class="w-full h-auto">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <p class="text-white text-lg font-semibold">And Many More...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Get a Callback Form -->
+            <!-- Contact Section -->
+            <section id="contact" class="py-16 bg-white rounded-xl shadow-lg">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Contact</h2>
+                    <div class="space-y-4">
+                        <p class="text-lg text-gray-600">📧E-Mail: <a href="mailto:your.arajora@gmail.com"
+                                class="text-blue-600 hover:underline">arajora@gmail.com</a></p>
+                        <p class="text-lg text-gray-600">LinkedIn: <a href="https://www.linkedin.com/in/aryanshrajora"
+                                target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/aryanshrajora</a>
+                        </p>
+                        <p class="text-lg text-gray-600">GitHub: <a href="https://github.com/aryanshrajora"
+                                target="_blank" class="text-blue-600 hover:underline">github.com/aryanshrajora</a></p>
+                        <p class="text-lg text-gray-600">WhatsApp: <a
+                                href="https://wa.me/919990977973?text=Hi%20Aryansh%2C%20I%20just%20checked%20out%20your%20portfolio"
+                                target="_blank" class="text-blue-600 hover:underline">+91 9990-977-973</a></p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Services Page (Page 2) -->
+        <section id="services-page" class="page">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mt-8 mb-6">My Services</h2>
+
+            <!-- Projects & About -->
+            <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">About My Work</h3>
+                        <p class="text-gray-600 mb-4">
+                            As an embedded systems engineer, I am passionate about creating the foundational technology
+                            that powers tomorrow's innovations. My expertise spans low-level firmware development,
+                            custom circuit design, and system-level integration. I'm adept at working with various
+                            microcontrollers, from tiny 8-bit devices to powerful ARM processors, and I have extensive
+                            experience in real-time operating systems (RTOS), communication protocols (I2C, SPI, UART),
+                            and driver development.
+                        </p>
+                        <p class="text-gray-600">
+                            I thrive on solving complex technical challenges and providing clean, well-documented, and
+                            scalable code. My goal is to deliver a solution that is not only functional but also
+                            maintainable and ready for mass production.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- URL Formate for Image Hosting Via Github :- "https://aryanshrajora.github.io/Portfolio/AQI Display And analyser Photo.jpg"-->
+                        <img src="https://aryanshrajora.github.io/rajora.in/Images/LED-Display/1.jpeg?text=Project+1"
+                            alt="Project 1" class="rounded-lg shadow-md">
+                        <img src="https://aryanshrajora.github.io/rajora.in/Images/AQI_Image/5.jpg" alt="Project 2"
+                            class="rounded-lg shadow-md">
+                        <img src="https://aryanshrajora.github.io/rajora.in/Images/AQI_Image/2.jpeg" alt="Project 3"
+                            class="rounded-lg shadow-md">
+                        <img src="https://aryanshrajora.github.io/rajora.in/Images/LED-Display/3.jpeg" alt="Project 4"
+                            class="rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits & Pricing -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Benefits of Working With Me</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-indigo-600 mr-2 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-gray-800">Quality and Reliability:</strong> I write clean,
+                                well-tested code that ensures your product performs flawlessly in the real world.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-indigo-600 mr-2 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-gray-800">Seamless Integration:</strong> My solutions are designed
+                                to integrate smoothly with existing hardware and software, saving you time and money.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-indigo-600 mr-2 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-gray-800">Clear Communication:</strong> I provide regular updates
+                                and a transparent process so you're always in the loop, from concept to completion.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Project Pricing Idea</h3>
+                    <p class="text-gray-600 mb-4">
+                        Every project is unique, and so is the pricing. Below are some general ideas to help you plan.
+                        Final pricing depends on project scope, complexity, and timeline.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="bg-gray-100 p-4 rounded-lg">
+                            <strong class="text-gray-800">Small Projects:</strong> Quick bug fixes, single-feature
+                            implementations. <span class="text-indigo-600 font-bold">₹2000 - ₹5,000</span>
+                        </li>
+                        <li class="bg-gray-100 p-4 rounded-lg">
+                            <strong class="text-gray-800">Mid-size Projects:</strong> Firmware for a new product, custom
+                            driver development. <span class="text-indigo-600 font-bold">₹3,000 - ₹12,000</span>
+                        </li>
+                        <li class="bg-gray-100 p-4 rounded-lg">
+                            <strong class="text-gray-800">Large-scale Projects:</strong> End-to-end product development,
+                            system architecture design. <span class="text-indigo-600 font-bold">₹10,000+</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page (Page 3) -->
+        <section id="contact-page" class="page">
+            <div class="text-center py-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+                <p class="text-lg text-gray-600 max-w-xl mx-auto mb-8">
+                    Ready to build something amazing? Please fill out the form below.
+                </p>
+                <!-- Embedded Google Form -->
+                <div class="relative overflow-hidden rounded-xl shadow-lg aspect-w-16 aspect-h-9"
+                    style="padding-bottom: 56.25%;">
+                    <iframe src="https://forms.gle/rvSxhWxBQmXkEqbp8" width="100%" height="800" frameborder="0"
+                        marginheight="0" marginwidth="0" class="absolute inset-0 w-full h-full">Loading…</iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navButtons = document.querySelectorAll('.nav-button');
+            const pages = document.querySelectorAll('.page');
+            const callbackForm = document.getElementById('callback-form');
+            const callbackMessage = document.getElementById('callback-message');
+
+            const showPage = (pageId) => {
+                pages.forEach(page => page.classList.remove('active'));
+                document.getElementById(pageId).classList.add('active');
+            };
+
+            navButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const pageName = button.getAttribute('data-page');
+                    showPage(pageName + '-page');
+                });
+            });
+
+            callbackForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                callbackMessage.classList.remove('hidden');
+                setTimeout(() => {
+                    callbackMessage.classList.add('hidden');
+                    callbackForm.reset();
+                }, 3000);
+            });
+
+        });
+    </script>
+</body>
+
+</html>
